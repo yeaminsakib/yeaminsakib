@@ -9,7 +9,7 @@
 
 - 🌱 I’m currently learning **go**
 
-- 👨‍💻 All of my projects are available at [yeaminsakib.com]([https://yeaminsakib.com/])
+- 👨‍💻 All of my projects are available at [yeaminsakib.com](https://yeaminsakib.com/)
 
 - 📝 I regularly write articles on [https://yeaminsakib.blogspot.com/](https://yeaminsakib.blogspot.com/)
 
