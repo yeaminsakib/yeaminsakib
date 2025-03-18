@@ -7,7 +7,7 @@
 
 - 🔭 I’m currently working on [Student stress and Mobile phone addiction](https://github.com/yeaminsakib/project/tree/main/Stress_Test)
 
-- 🌱 I’m currently learning **go**
+- 🌱 I’m currently learning **Bug Hunting**
 
 - 👨‍💻 All of my projects are available at [yeaminsakib.com](https://yeaminsakib.com/)
 
