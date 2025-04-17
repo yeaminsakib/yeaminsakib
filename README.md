@@ -11,8 +11,6 @@
 
 - 👨‍💻 All of my projects are available at [yeaminsakib.com](https://yeaminsakib.com/)
 
-- 📝 I regularly write articles on [https://yeaminsakib.blogspot.com/](https://yeaminsakib.blogspot.com/)
-
 - 📫 How to reach me **yeaminsakib@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
