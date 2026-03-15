@@ -1,34 +1,566 @@
-<h1 align="center">Hi 👋, I'm Md. Yeamin Islam Sakib(YeaminSakib)</h1>
-<h3 align="center">A passionate web developer and junior cyber security Analyst.</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeamin Sakib · modern profile</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Inter & Space Grotesk -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=yeaminsakib" alt="yeaminsakib" /></a> </p>
+        body {
+            background: linear-gradient(145deg, #f6f9fc 0%, #edf2f9 100%);
+            font-family: "Inter", system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 2.5rem 1.5rem;
+            color: #1e293b;
+            line-height: 1.5;
+        }
 
-<p align="left"> <a href="https://twitter.com/yeaminsakib" target="blank"><img src="https://img.shields.io/twitter/follow/yeaminsakib?logo=twitter&style=for-the-badge" alt="yeaminsakib" /></a> </p>
+        .profile-card {
+            max-width: 1280px;
+            width: 100%;
+            background: rgba(255,255,255,0.75);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 3rem;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15), 0 0 0 1px rgba(148,163,184,0.1);
+            padding: 2.5rem;
+        }
 
-- 🔭 I’m currently working on [Student stress and Mobile phone addiction](https://github.com/yeaminsakib/project/tree/main/Stress_Test)
+        /* layout grid */
+        .grid-main {
+            display: grid;
+            grid-template-columns: 1fr 2.2fr;
+            gap: 2rem;
+            margin-top: 0.5rem;
+        }
 
-- 🌱 I’m currently learning **Bug Hunting**
+        /* left panel — intro & contact */
+        .intro-panel {
+            background: white;
+            border-radius: 2rem;
+            padding: 2rem 1.8rem;
+            box-shadow: 0 8px 20px -6px rgba(0,20,40,0.08);
+            border: 1px solid rgba(203, 213, 225, 0.3);
+            transition: 0.2s;
+        }
 
-- 👨‍💻 All of my projects are available at [yeaminsakib.com](https://yeaminsakib.com/)
+        .avatar-title {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            margin-bottom: 1.8rem;
+            flex-wrap: wrap;
+        }
 
-- 📫 How to reach me **yeaminsakib@gmail.com**
+        .avatar-icon {
+            background: #0f172a;
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /* organic modern shape */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 600;
+            box-shadow: 0 15px 25px -8px #0f172a40;
+        }
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/yeaminsakib" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="yeaminsakib" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/yeaminsakib" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="yeaminsakib" height="30" width="40" /></a>
-<a href="https://stackoverflow.com/users/yeaminsakib" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="yeaminsakib" height="30" width="40" /></a>
-<a href="https://kaggle.com/sakib27631" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="sakib27631" height="30" width="40" /></a>
-<a href="https://fb.com/yeamin5akib" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="yeamin5akib" height="30" width="40" /></a>
-<a href="https://www.behance.net/yeaminsakib" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg" alt="yeaminsakib" height="30" width="40" /></a>
-<a href="https://medium.com/@yeaminsakib" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@yeaminsakib" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/yeaminsakib" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="yeaminsakib" height="30" width="40" /></a>
-</p>
+        .name h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+        .name h1 span {
+            font-weight: 500;
+            color: #475569;
+            font-size: 1.2rem;
+            display: block;
+            margin-top: 0.2rem;
+        }
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=yeaminsakib&show_icons=true&locale=en&layout=compact" alt="yeaminsakib" /></p>
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin: 1.5rem 0 1.2rem;
+        }
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=yeaminsakib&show_icons=true&locale=en" alt="yeaminsakib" /></p>
+        .chip {
+            background: #eef2ff;
+            color: #1e3a8a;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid #a5b4fc60;
+            backdrop-filter: blur(2px);
+        }
 
+        .chip i {
+            font-size: 0.9rem;
+            color: #2563eb;
+        }
+
+        .stat-box {
+            background: #f8fafc;
+            border-radius: 1.5rem;
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            margin: 1.8rem 0 1.5rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: #0f172a;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: #64748b;
+        }
+
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin-top: 1.2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 0.95rem;
+            color: #1e293b;
+            text-decoration: none;
+            transition: 0.15s;
+            padding: 0.6rem 1rem;
+            border-radius: 50px;
+            background: #f1f5f9;
+        }
+
+        .contact-item i {
+            width: 24px;
+            color: #2563eb;
+            font-size: 1.2rem;
+        }
+
+        .contact-item:hover {
+            background: #e6edf8;
+            transform: translateX(4px);
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin: 1.8rem 0 1rem;
+        }
+
+        .social-icon {
+            background: white;
+            border-radius: 40px;
+            padding: 0.6rem 1rem;
+            border: 1px solid #cbd5e1;
+            color: #1e293b;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: 0.15s;
+            text-decoration: none;
+        }
+
+        .social-icon i {
+            font-size: 1.1rem;
+            color: #2563eb;
+        }
+
+        .social-icon:hover {
+            background: #2563eb;
+            border-color: #2563eb;
+            color: white;
+        }
+        .social-icon:hover i {
+            color: white;
+        }
+
+        /* right panel — main content */
+        .main-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .section {
+            background: white;
+            border-radius: 2rem;
+            padding: 1.8rem 2rem;
+            border: 1px solid #e9eef3;
+            box-shadow: 0 4px 10px -8px #b0c4de;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 8px;
+            border-radius: 14px;
+            font-size: 1rem;
+        }
+
+        .project-block {
+            background: #f9fbfe;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            border-left: 6px solid #2563eb;
+            margin-bottom: 1.2rem;
+        }
+
+        .project-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .project-desc {
+            color: #334155;
+            margin: 0.7rem 0 1rem;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid #2563eb;
+            color: #2563eb;
+            padding: 0.5rem 1.5rem;
+            border-radius: 40px;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: 0.2s;
+        }
+
+        .btn-outline:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+        /* tool tags */
+        .tools-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .tool-tag {
+            background: #ecfdf5;
+            color: #065f46;
+            padding: 0.45rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid #a7f3d0;
+            transition: 0.1s;
+        }
+
+        .tool-tag i {
+            margin-right: 4px;
+            font-size: 0.8rem;
+            color: #059669;
+        }
+
+        /* stats cards */
+        .stats-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .stat-card {
+            background: #f1f5f9;
+            flex: 1 1 180px;
+            border-radius: 1.5rem;
+            padding: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border: 1px solid #d9e2ef;
+        }
+
+        .stat-card i {
+            font-size: 2rem;
+            color: #2563eb;
+        }
+
+        .stat-card div p:first-child {
+            font-size: 0.8rem;
+            color: #475569;
+        }
+
+        .stat-card div p:last-child {
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .trophy-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1rem;
+            margin: 1rem 0 0.2rem;
+            background: #fffbeb;
+            padding: 0.8rem 1.2rem;
+            border-radius: 60px;
+            align-items: center;
+        }
+
+        .trophy-row i {
+            color: #d97706;
+        }
+
+        /* responsiveness */
+        @media (max-width: 900px) {
+            .grid-main {
+                grid-template-columns: 1fr;
+            }
+            .profile-card { padding: 1.5rem; }
+        }
+        @media (max-width: 500px) {
+            .avatar-title { flex-direction: column; align-items: start; }
+        }
+
+        hr {
+            border: none;
+            border-top: 2px dashed #cbd5e1;
+            margin: 1rem 0;
+        }
+
+        /* tweaks */
+        .link-muted {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer-note {
+            font-size: 0.85rem;
+            color: #626e7e;
+            margin-top: 2rem;
+            text-align: center;
+            border-top: 1px dashed #cbd5e1;
+            padding-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <!-- header trophy / twitter badge (clean version) -->
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 1rem;">
+            <div class="trophy-row">
+                <i class="fas fa-trophy" style="font-size: 1.2rem;"></i>
+                <span style="font-weight: 500;">github-profile-trophy · 9 achievements </span>
+                <span style="color: #b45309;">🏆</span>
+            </div>
+            <a href="https://twitter.com/yeaminsakib" target="_blank" style="background:#0f172a; color:white; padding:0.4rem 1.2rem; border-radius:40px; text-decoration:none; font-weight:500; display:inline-flex; align-items:center; gap:0.4rem;">
+                <i class="fab fa-twitter" style="font-size:1rem;"></i> @yeaminsakib
+                <span style="background:#2563eb; padding:0.2rem 0.7rem; border-radius:60px; margin-left:0.3rem; font-size:0.75rem;">1.2K</span>
+            </a>
+        </div>
+
+        <!-- main grid -->
+        <div class="grid-main">
+            <!-- LEFT PANEL: intro + contact + stats compact -->
+            <div class="intro-panel">
+                <div class="avatar-title">
+                    <div class="avatar-icon">YS</div>
+                    <div class="name">
+                        <h1>Md. Yeamin Islam Sakib <span>@yeaminsakib</span></h1>
+                    </div>
+                </div>
+
+                <div class="badge-row">
+                    <span class="chip"><i class="fas fa-code"></i> web developer</span>
+                    <span class="chip"><i class="fas fa-shield-halved"></i> Jr. security analyst</span>
+                    <span class="chip"><i class="fas fa-bug"></i> bug hunter</span>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-item">
+                        <div class="stat-number">17+</div>
+                        <div class="stat-label">projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2.1k</div>
+                        <div class="stat-label">🌟 stars</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">32</div>
+                        <div class="stat-label">followers</div>
+                    </div>
+                </div>
+
+                <!-- contact & reach -->
+                <div class="contact-list">
+                    <a href="mailto:yeaminsakib@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> yeaminsakib@gmail.com</a>
+                    <a href="https://yeaminsakib.com" target="_blank" class="contact-item"><i class="fas fa-globe"></i> yeaminsakib.com</a>
+                    <a href="#" class="contact-item"><i class="fas fa-map-pin"></i> Dhaka, Bangladesh</a>
+                </div>
+
+                <!-- social cluster (modern row) -->
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/yeaminsakib" class="social-icon"><i class="fab fa-linkedin-in"></i> <span>in</span></a>
+                    <a href="https://twitter.com/yeaminsakib" class="social-icon"><i class="fab fa-x-twitter"></i> X</a>
+                    <a href="https://github.com/yeaminsakib" class="social-icon"><i class="fab fa-github"></i> gh</a>
+                    <a href="https://fb.com/yeamin5akib" class="social-icon"><i class="fab fa-facebook-f"></i> fb</a>
+                    <a href="https://stackoverflow.com/users/yeaminsakib" class="social-icon"><i class="fab fa-stack-overflow"></i> SO</a>
+                    <a href="https://medium.com/@yeaminsakib" class="social-icon"><i class="fab fa-medium"></i> med</a>
+                    <a href="https://hackerrank.com/yeaminsakib" class="social-icon"><i class="fab fa-hackerrank"></i> HR</a>
+                    <a href="https://behance.net/yeaminsakib" class="social-icon"><i class="fab fa-behance"></i> be</a>
+                    <a href="https://kaggle.com/sakib27631" class="social-icon"><i class="fab fa-kaggle"></i> kg</a>
+                </div>
+
+                <hr>
+                <div style="font-size:0.9rem; color:#2c3e50;"><i class="fas fa-exclamation-circle" style="color:#2563eb;"></i> “secure code · clean design”</div>
+            </div>
+
+            <!-- RIGHT PANEL (main) -->
+            <div class="main-panel">
+                <!-- featured project -->
+                <div class="section">
+                    <div class="section-title"><i class="fas fa-microchip"></i> 🔭 current project</div>
+                    <div class="project-block">
+                        <div class="project-title">
+                            <i class="fas fa-brain"></i> Student stress & mobile addiction
+                        </div>
+                        <div class="project-desc">
+                            ML-based analysis using Python, pandas, scikit-learn. Predicts stress patterns from mobile usage. <span style="background:#e9f0ff; padding:0.1rem 0.6rem; border-radius:60px;">#research</span>
+                        </div>
+                        <a href="https://github.com/yeaminsakib/project/tree/main/Stress_Test" class="btn-outline"><i class="fab fa-github"></i> repository</a>
+                    </div>
+
+                    <!-- current learning & status -->
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+                        <span style="background:#dbeafe; border-radius:60px; padding:0.5rem 1.3rem;"><i class="fas fa-seedling" style="color:#2563eb;"></i> learning <strong>Bug Hunting</strong></span>
+                        <span style="background:#f1f5f9; border-radius:60px; padding:0.5rem 1.3rem;"><i class="fas fa-bug"></i> OWASP top10 · BurpSuite</span>
+                    </div>
+                </div>
+
+                <!-- languages & tools (modern tags) -->
+                <div class="section">
+                    <div class="section-title"><i class="fas fa-laptop-code"></i> toolchain & languages</div>
+                    <div class="tools-cloud">
+                        <span class="tool-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="tool-tag"><i class="fas fa-code"></i> C</span>
+                        <span class="tool-tag"><i class="fab fa-golang"></i> Go</span>
+                        <span class="tool-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tool-tag"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tool-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tool-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        <span class="tool-tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tool-tag"><i class="fas fa-database"></i> MSSQL</span>
+                        <span class="tool-tag"><i class="fab fa-django"></i> Django</span>
+                        <span class="tool-tag"><i class="fas fa-chart-line"></i> pandas</span>
+                        <span class="tool-tag"><i class="fas fa-chart-bar"></i> seaborn</span>
+                        <span class="tool-tag"><i class="fas fa-eye"></i> scikit-learn</span>
+                        <span class="tool-tag"><i class="fas fa-fire"></i> PyTorch</span>
+                        <span class="tool-tag"><i class="fas fa-tensorflow"></i> TensorFlow</span>
+                        <span class="tool-tag"><i class="fas fa-microchip"></i> Arduino</span>
+                        <span class="tool-tag"><i class="fas fa-terminal"></i> Bash</span>
+                        <span class="tool-tag"><i class="fab fa-linux"></i> Linux</span>
+                        <span class="tool-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="tool-tag"><i class="fas fa-cubes"></i> MATLAB</span>
+                        <span class="tool-tag"><i class="fas fa-paint-brush"></i> Figma</span>
+                    </div>
+                </div>
+
+                <!-- GitHub stats row (modern) -->
+                <div class="section">
+                    <div class="section-title"><i class="fas fa-chart-simple"></i> GitHub pulse</div>
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <p>top language</p>
+                                <p>Python · 52%</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <p>repos contributed</p>
+                                <p>24</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-ranking-star"></i>
+                            <div>
+                                <p>rank (trophy)</p>
+                                <p>#1203</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- embed original stats as inline compact -->
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; background: #f1f5f9; border-radius: 1.5rem; padding: 1.2rem; margin-top: 1.2rem;">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=yeaminsakib&show_icons=true&locale=en&layout=compact" alt="top langs" style="border-radius:12px; max-width:100%; height:auto;">
+                        <img src="https://github-readme-stats.vercel.app/api?username=yeaminsakib&show_icons=true&locale=en" alt="github stats" style="border-radius:12px; max-width:100%; height:auto;">
+                    </div>
+                </div>
+
+                <!-- quick extra: all projects link & medium -->
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="https://yeaminsakib.com" style="background:#0f172a; color:white; padding:0.8rem 2rem; border-radius:60px; text-decoration:none; font-weight:600;"><i class="fas fa-folder-open"></i> all projects → yeaminsakib.com</a>
+                    <a href="https://medium.com/@yeaminsakib" style="background:#1e1e1e; color:white; padding:0.8rem 2rem; border-radius:60px; text-decoration:none;"><i class="fab fa-medium"></i> articles on medium</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer note with hackerrank / kaggle etc (keeps all links) -->
+        <div class="footer-note">
+            <i class="fas fa-shield"></i> junior security analyst · 
+            <i class="fab fa-hackerrank"></i> hackerrank @yeaminsakib ·
+            <i class="fab fa-kaggle"></i> kaggle/sakib27631 · 
+            <i class="fab fa-behance"></i> behance/yeaminsakib 
+            · <i class="fas fa-bolt"></i> always learning
+        </div>
+    </div>
+</body>
+</html>
