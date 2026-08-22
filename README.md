@@ -33,7 +33,7 @@ Clean, minimal, information-rich.
 
 ## 📌 Current Focus
 
-- 🔭 Working on: **[Student Stress & Mobile Addiction Analysis](https://github.com/yeaminsakib/project/tree/main/Stress_Test)**  
+- 🔭 Working on: **[Spam Mail Analysis](https://github.com/yeaminsakib/project/tree/main/Stress_Test)**  
   *ML model to predict stress patterns from mobile usage.*
 - 🌱 Learning: **Bug Bounty Hunting | OWASP Top 10 | Burp Suite**
 - 👨‍💻 Portfolio: [yeaminsakib.com](https://yeaminsakib.com/)
